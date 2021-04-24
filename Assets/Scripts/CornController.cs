@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public struct PlayerInputs
 {
@@ -12,8 +13,8 @@ public struct PlayerInputs
 [RequireComponent(typeof(PlayerInput))]
 public class CornController : MonoBehaviour
 {
-    //corns add themselves to the list of corn kernels. 
     public List<Kernel> CornKernels;
+    public CameraController Camera;
 
     [Header("Kernal Movement")]
     public float Acceleration = 0.01f;
@@ -35,6 +36,7 @@ public class CornController : MonoBehaviour
     public LayerMask CollisionLayer;
     public float ShakeSpeed = 0.2f;
     public float ShakeAmount = 0.2f;
+    public bool Debugging = true;
 
     private void Start()
     {
@@ -53,11 +55,12 @@ public class CornController : MonoBehaviour
         }
 
         HandleJumping();
-
+        HandleCamera();
 
         HandleHorizontalMovement();
         foreach (Kernel k in CornKernels)
         {
+            
 /*            if (_jumpCharging)
                 k.Shake(ShakeSpeed, ShakeAmount);*/
             k.Move(_velocity);
@@ -69,6 +72,17 @@ public class CornController : MonoBehaviour
             _jumpCompleted = false;
             _jumpChargeTime = 0;
             _jumpRequested = false;
+        }
+    }
+
+    private void Update()
+    {
+        //if all the corn bits are gone in this scene call the next one!
+        //might need a special case for the final one. 
+
+        if(CornKernels.Count == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -117,8 +131,35 @@ public class CornController : MonoBehaviour
         }
     }
 
+    private void HandleCamera()
+    {
+        //find the center point of all of the kernels.
+        float totalX = 0f;
+        float totalY = 0f;
+        foreach (Kernel k in CornKernels)
+        {
+            totalX += k.gameObject.transform.position.x;
+            totalY += k.gameObject.transform.position.y;
+
+        }
+        //set the camera to follow that
+        Vector2 newTarget = new Vector2( totalX / CornKernels.Count,  totalY / CornKernels.Count);
+        Camera.SetTarget(newTarget);
+        
+        if (Debugging)
+        {
+            foreach (Kernel k in CornKernels)
+            {
+                Debug.DrawLine(k.transform.position, newTarget);
+            }
+        }
+        
+    }
+
     private float CalculateJumpGravity(float jumpHeight)
     {
         return (2 * jumpHeight) / Mathf.Pow(2, TimeToJumpApex);
     }
+
+    
 }

@@ -10,6 +10,7 @@ public class Kernel : MonoBehaviour
     private Rigidbody2D _rigidbody;
     public float MaxSpeed;
     public bool debugging = false;
+    public bool InFrame = true;
 
     // Start is called before the first frame update
     void Start()
