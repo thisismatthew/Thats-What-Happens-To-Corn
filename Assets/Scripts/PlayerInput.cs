@@ -3,11 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CornController))]
 public class PlayerInput : MonoBehaviour
 {
 
-    public CornController CornController;
+    private CornController _cornController;
     private PlayerInputs inputs;
+
+    private void Start()
+    {
+        _cornController = GetComponent<CornController>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -18,7 +24,7 @@ public class PlayerInput : MonoBehaviour
             inputs.JumpUp = true;
 
 
-        CornController.SetInputs(ref inputs);
+        _cornController.SetInputs(ref inputs);
         ResetInput();
     }
 

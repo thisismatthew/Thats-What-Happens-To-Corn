@@ -9,35 +9,36 @@ public struct PlayerInputs
     public bool JumpUp;
 }
 
+[RequireComponent(typeof(PlayerInput))]
 public class CornController : MonoBehaviour
 {
     //corns add themselves to the list of corn kernels. 
-    public List<kernel> CornKernels;
+    public List<Kernel> CornKernels;
 
     [Header("Kernal Movement")]
     public float Acceleration = 0.01f;
-    public float MaxSpeed = 0.2f;
+    public float MaxSpeed = 6f;
     private Vector2 _velocity = Vector2.zero;
     private float _horizontalInput = 0f;
 
     [Header("Kernal Jumping")]
     public float ChargeUpTime = 0.5f;
-    public float CoolDownTime = 0.5f;
-    public float RegularJumpHeight = 1f;
-    public float ChargedJumpHeight = 2f;
-    public float TimeToJumpApex = 0.3f;
+    public float RegularJumpHeight = 10f;
+    public float ChargedJumpHeight = 15f;
+    public float TimeToJumpApex = 0.5f;
     private bool _jumpCharging = false;
     private bool _jumpRequested = false;
     private bool _jumpCompleted = false;
     public float _jumpChargeTime = 0f;
 
-    [Header("Kernel Collisions")]
+    [Header("Misc")]
     public LayerMask CollisionLayer;
-
+    public float ShakeSpeed = 0.2f;
+    public float ShakeAmount = 0.2f;
 
     private void Start()
     {
-        foreach (kernel k in CornKernels)
+        foreach (Kernel k in CornKernels)
         {
             k.CollisionLayer = CollisionLayer;
             k.MaxSpeed = MaxSpeed;
@@ -55,8 +56,10 @@ public class CornController : MonoBehaviour
 
 
         HandleHorizontalMovement();
-        foreach (kernel k in CornKernels)
+        foreach (Kernel k in CornKernels)
         {
+/*            if (_jumpCharging)
+                k.Shake(ShakeSpeed, ShakeAmount);*/
             k.Move(_velocity);
         }
 

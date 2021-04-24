@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class kernel : MonoBehaviour
+public class Kernel : MonoBehaviour
 {
     public LayerMask CollisionLayer;
     public bool _grounded;
@@ -61,6 +61,9 @@ public class kernel : MonoBehaviour
         return false;
     }
 
-
+    public void Shake(float speed, float amount)
+    {
+        transform.position = new Vector2(transform.position.x + Mathf.Sin(Time.time * speed) * amount, transform.position.y + Mathf.Sin(Time.time * speed) * amount);
+    }
 
 }
