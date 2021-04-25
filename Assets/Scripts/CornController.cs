@@ -60,9 +60,6 @@ public class CornController : MonoBehaviour
         HandleHorizontalMovement();
         foreach (Kernel k in CornKernels)
         {
-            
-/*            if (_jumpCharging)
-                k.Shake(ShakeSpeed, ShakeAmount);*/
             k.Move(_velocity);
         }
 
