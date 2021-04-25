@@ -60,6 +60,7 @@ public class CornController : MonoBehaviour
         HandleHorizontalMovement();
         foreach (Kernel k in CornKernels)
         {
+
             k.Move(_velocity);
         }
 
@@ -79,6 +80,7 @@ public class CornController : MonoBehaviour
 
         if(CornKernels.Count == 0)
         {
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }

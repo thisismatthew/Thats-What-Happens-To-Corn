@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/OLDMouth.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Mouth.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: ee67ecc2cb8921b41853e444d4bcaf12
   - enabled: 1
     path: Assets/Scenes/Gullet.unity
     guid: c900ae8e3daa8124dbc431747415f2e5

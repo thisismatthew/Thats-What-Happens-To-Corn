@@ -9,6 +9,6 @@ public class Teleporter : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Controller.CornKernels.Remove(collision.GetComponent<Kernel>());
-        Destroy(collision.gameObject);
+        Destroy(collision.gameObject, 3f);
     }
 }

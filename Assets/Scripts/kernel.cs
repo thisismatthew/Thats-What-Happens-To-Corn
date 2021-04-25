@@ -39,7 +39,7 @@ public class Kernel : MonoBehaviour
             newVelocity += diff;
         }
 
-
+        
 
         _rigidbody.velocity += newVelocity;
         
@@ -82,20 +82,20 @@ public class Kernel : MonoBehaviour
         RaycastHit2D newTargetHit = Physics2D.Raycast(newTarget.position, Vector2.down, 3f, CollisionLayer);
         Debug.DrawLine(newTarget.position, newTargetHit.point, Color.blue);
 
-        
-
-        //if the foot postition gets too far from the target position
-        //move the foot and the ray origin over to the new target
-        if (Vector2.Distance(foot.transform.position, newTargetHit.point)> 0.5f)
-        {
-            Debug.Log("pointMoved");
-            origin = newTarget;
-        }
-
         RaycastHit2D hit = Physics2D.Raycast(origin.position, Vector2.down, 3f, CollisionLayer);
         Debug.DrawLine(origin.position, hit.point, Color.cyan);
 
-        foot.position = hit.point;
+        //if the foot postition gets too far from the target position
+        //move the foot and the ray origin over to the new target
+        if (Vector2.Distance(foot.transform.position, newTargetHit.point)> 1f)
+        {
+            Debug.Log("pointMoved");
+            origin.position = newTarget.position;
+        }
+
+        if (Vector2.Distance(foot.transform.position, hit.point) > 0.1f)
+            foot.position = Vector2.Lerp(foot.position, hit.point, 0.5f);
+
     }
 
 
