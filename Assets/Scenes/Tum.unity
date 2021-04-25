@@ -1189,17 +1189,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _grounded: 0
   MaxSpeed: 0
   debugging: 0
   InFrame: 1
-  RightLegAnimationTarget: {fileID: 1303632000}
-  LeftLegAnimationTarget: {fileID: 2111232309}
-  RightFoot: {fileID: 1950203848}
-  LeftFoot: {fileID: 2072615550}
-  RightUpdateTarget: {fileID: 154081498}
-  LeftUpdateTarget: {fileID: 1019816039}
+  RightLegAnimationTarget: {fileID: 0}
+  LeftLegAnimationTarget: {fileID: 0}
+  RightFoot: {fileID: 0}
+  LeftFoot: {fileID: 0}
+  RightUpdateTarget: {fileID: 0}
+  LeftUpdateTarget: {fileID: 0}
 --- !u!4 &327830781
 Transform:
   m_ObjectHideFlags: 0
@@ -1746,17 +1746,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _grounded: 0
   MaxSpeed: 0
   debugging: 0
   InFrame: 1
-  RightLegAnimationTarget: {fileID: 655207124}
-  LeftLegAnimationTarget: {fileID: 1180560993}
-  RightFoot: {fileID: 355924224}
-  LeftFoot: {fileID: 676268464}
-  RightUpdateTarget: {fileID: 236409684}
-  LeftUpdateTarget: {fileID: 1565960620}
+  RightLegAnimationTarget: {fileID: 0}
+  LeftLegAnimationTarget: {fileID: 0}
+  RightFoot: {fileID: 0}
+  LeftFoot: {fileID: 0}
+  RightUpdateTarget: {fileID: 0}
+  LeftUpdateTarget: {fileID: 0}
 --- !u!1 &446812999
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,17 +3201,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _grounded: 0
   MaxSpeed: 0
   debugging: 0
   InFrame: 1
-  RightLegAnimationTarget: {fileID: 1548679309}
-  LeftLegAnimationTarget: {fileID: 2095063319}
-  RightFoot: {fileID: 328714915}
-  LeftFoot: {fileID: 1138053863}
-  RightUpdateTarget: {fileID: 1516049840}
-  LeftUpdateTarget: {fileID: 1411107347}
+  RightLegAnimationTarget: {fileID: 0}
+  LeftLegAnimationTarget: {fileID: 0}
+  RightFoot: {fileID: 0}
+  LeftFoot: {fileID: 0}
+  RightUpdateTarget: {fileID: 0}
+  LeftUpdateTarget: {fileID: 0}
 --- !u!1 &796150422
 GameObject:
   m_ObjectHideFlags: 0
@@ -5600,17 +5600,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _grounded: 0
   MaxSpeed: 0
   debugging: 0
   InFrame: 1
-  RightLegAnimationTarget: {fileID: 1515059637}
-  LeftLegAnimationTarget: {fileID: 1451969199}
-  RightFoot: {fileID: 857649651}
-  LeftFoot: {fileID: 386608414}
-  RightUpdateTarget: {fileID: 150982115}
-  LeftUpdateTarget: {fileID: 446813000}
+  RightLegAnimationTarget: {fileID: 0}
+  LeftLegAnimationTarget: {fileID: 0}
+  RightFoot: {fileID: 0}
+  LeftFoot: {fileID: 0}
+  RightUpdateTarget: {fileID: 0}
+  LeftUpdateTarget: {fileID: 0}
 --- !u!1 &1486954387
 GameObject:
   m_ObjectHideFlags: 0
@@ -7095,17 +7095,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _grounded: 0
   MaxSpeed: 0
   debugging: 0
   InFrame: 1
-  RightLegAnimationTarget: {fileID: 188318704}
-  LeftLegAnimationTarget: {fileID: 1339331047}
-  RightFoot: {fileID: 1377341372}
-  LeftFoot: {fileID: 2099841670}
-  RightUpdateTarget: {fileID: 321995764}
-  LeftUpdateTarget: {fileID: 259368211}
+  RightLegAnimationTarget: {fileID: 0}
+  LeftLegAnimationTarget: {fileID: 0}
+  RightFoot: {fileID: 0}
+  LeftFoot: {fileID: 0}
+  RightUpdateTarget: {fileID: 0}
+  LeftUpdateTarget: {fileID: 0}
 --- !u!1 &1941806768
 GameObject:
   m_ObjectHideFlags: 0
@@ -7377,17 +7377,6 @@ Transform:
   m_Father: {fileID: 431345981}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 92.15}
---- !u!114 &2046050024 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5722123870578121364, guid: 11a297f262b7582469fa0b26e62c76cb, type: 3}
-  m_PrefabInstance: {fileID: 8819330325021729483}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9504cb3164f034e943d61dde117ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2068728963
 GameObject:
   m_ObjectHideFlags: 0
@@ -8084,12 +8073,12 @@ PrefabInstance:
       objectReference: {fileID: 519420030}
     - target: {fileID: 8819330325847081612, guid: 11a297f262b7582469fa0b26e62c76cb, type: 3}
       propertyPath: CornKernels.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8819330325847081612, guid: 11a297f262b7582469fa0b26e62c76cb, type: 3}
       propertyPath: CornKernels.Array.data[0]
       value: 
-      objectReference: {fileID: 2046050024}
+      objectReference: {fileID: 0}
     - target: {fileID: 8819330325847081612, guid: 11a297f262b7582469fa0b26e62c76cb, type: 3}
       propertyPath: CornKernels.Array.data[1]
       value: 
