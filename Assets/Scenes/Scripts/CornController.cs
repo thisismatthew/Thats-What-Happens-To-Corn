@@ -13,6 +13,7 @@ public struct PlayerInputs
 [RequireComponent(typeof(PlayerInput))]
 public class CornController : MonoBehaviour
 {
+    public List<GameObject> KernelLoader;
     public List<Kernel> CornKernels;
     public CameraController Camera;
 
@@ -38,8 +39,13 @@ public class CornController : MonoBehaviour
     public float ShakeAmount = 0.2f;
     public bool Debugging = true;
 
+
     private void Start()
     {
+        foreach (GameObject g in KernelLoader)
+        {
+            CornKernels.Add(g.GetComponentInChildren<Kernel>());
+        }
         foreach (Kernel k in CornKernels)
         {
             k.CollisionLayer = CollisionLayer;
