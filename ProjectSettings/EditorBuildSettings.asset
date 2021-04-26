@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intestines.unity
     guid: b1d9a87bc96780c43807d4c5e213755e
+  - enabled: 1
+    path: Assets/Scenes/Bum.unity
+    guid: 70e87f6dd1ff80848a85161d3e5f6203
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 0b986eb11c4fd21419e1fea8d194c1ba
   m_configObjects: {}

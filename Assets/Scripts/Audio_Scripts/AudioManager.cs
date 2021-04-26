@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-
+    private bool openingDone = false;
     public Sound[] sounds;
 
     // This is Brackeys Audio Manager system with some small tweaks. 
@@ -23,7 +23,14 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        FindObjectOfType<AudioManager>().Play("music");
+        FindObjectOfType<AudioManager>().Play("OpeningSting");
+    }
+
+    private void Update()
+    {
+
+
+
     }
 
     // Update is called once per frame
@@ -49,5 +56,13 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.UnPause();
+    }
+
+    public bool IsPlaying(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s.source.isPlaying)
+            return true;
+        return false;
     }
 }
