@@ -58,6 +58,11 @@ public class CornController : MonoBehaviour
         if (_jumpCharging)
         {
             _jumpChargeTime += Time.deltaTime;
+            foreach (Kernel k in CornKernels)
+            {
+
+                k.Shake(_jumpChargeTime);
+            }
         }
 
         HandleJumping();
@@ -147,15 +152,34 @@ public class CornController : MonoBehaviour
             totalY += k.gameObject.transform.position.y;
 
         }
-        //set the camera to follow that
-        Vector2 newTarget = new Vector2( totalX / CornKernels.Count,  totalY / CornKernels.Count);
-        Camera.SetTarget(newTarget);
+        //set the camera to follow the corn that is closest to that
+        Vector2 middleOfCorn = new Vector2( totalX / CornKernels.Count,  totalY / CornKernels.Count);
+        float distance = 0;
+        Vector2 closestCorn = Vector2.zero;
+        if (CornKernels[0] != null)
+        {
+            distance = Vector2.Distance(CornKernels[0].gameObject.transform.position, middleOfCorn);
+            closestCorn = CornKernels[0].gameObject.transform.position;
+        }
+        foreach (Kernel k in CornKernels)
+        {
+            if (Vector2.Distance(k.gameObject.transform.position, middleOfCorn) < Vector2.Distance(closestCorn, middleOfCorn))
+            {
+                closestCorn = k.gameObject.transform.position;
+            }
+        }
+        if (CornKernels.Count == 2)
+        {
+            closestCorn = CornKernels[0].gameObject.transform.position;
+        }
+
+        Camera.SetTarget(closestCorn);
         
         if (Debugging)
         {
             foreach (Kernel k in CornKernels)
             {
-                Debug.DrawLine(k.transform.position, newTarget);
+                Debug.DrawLine(k.transform.position, middleOfCorn);
             }
         }
         

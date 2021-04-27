@@ -216,6 +216,8 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -334,6 +336,40 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0f23a5ee6e9844aa11e57955ab9834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartSounds:
+  - Music
+  - LowChomp
+  StopSounds:
+  - OpeningChomp
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ec069a63b0dab479f6d07b14c30256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderFeature: {fileID: -7152903125360578561, guid: 4a8e21d5c33334b11b34a596161b9360,
+    type: 2}
+  outlineSize: 0.3
+  innerColor: {r: 0.6088426, g: 1, b: 0.5235849, a: 1}
+  outlineColor: {r: 0.7298977, g: 0.8301887, b: 0.121395506, a: 1}
 --- !u!1 &555517799
 GameObject:
   m_ObjectHideFlags: 0

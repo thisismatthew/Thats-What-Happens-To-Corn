@@ -2545,6 +2545,8 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2663,6 +2665,39 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ec069a63b0dab479f6d07b14c30256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderFeature: {fileID: -7152903125360578561, guid: 4a8e21d5c33334b11b34a596161b9360,
+    type: 2}
+  outlineSize: 0.114
+  innerColor: {r: 0.7877358, g: 1, b: 0.9893868, a: 1}
+  outlineColor: {r: 0.6745283, g: 1, b: 1, a: 1}
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0f23a5ee6e9844aa11e57955ab9834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartSounds:
+  - Squelch
+  StopSounds:
+  - TumBubbles
 --- !u!1001 &520798746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12858,6 +12893,69 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 462415005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1799234408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799234410}
+  - component: {fileID: 1799234409}
+  m_Layer: 6
+  m_Name: ColliderHat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &1799234409
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799234408}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.950059, y: 2.0214596}
+      - {x: -2.436815, y: -0.27909598}
+      - {x: -1.794965, y: -2.0471501}
+      - {x: -0.29910648, y: 0.23120168}
+      - {x: 3.208029, y: -0.0212875}
+      - {x: 4.6736236, y: -2.078103}
+      - {x: 6.027401, y: 1.3923831}
+--- !u!4 &1799234410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799234408}
+  m_LocalRotation: {x: -0, y: -0, z: 0.062482674, w: 0.99804604}
+  m_LocalPosition: {x: -64.74033, y: 105.3, z: 0}
+  m_LocalScale: {x: 5.689264, y: 5.689264, z: 5.689264}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.165}
 --- !u!1001 &1802014751
 PrefabInstance:
   m_ObjectHideFlags: 0

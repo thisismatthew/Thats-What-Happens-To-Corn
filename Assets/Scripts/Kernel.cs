@@ -46,6 +46,12 @@ public class Kernel : MonoBehaviour
        
     }
 
+    public void Shake(float waitTime)
+    {
+        Mathf.Clamp(waitTime, 0, 1);
+        _rigidbody.velocity += new Vector2(Random.Range(waitTime, -waitTime), Random.Range(waitTime, -waitTime));
+    }
+
     bool IsGrounded()
     {
         
@@ -89,7 +95,7 @@ public class Kernel : MonoBehaviour
         //move the foot and the ray origin over to the new target
         if (Vector2.Distance(foot.transform.position, newTargetHit.point)> 1f)
         {
-            Debug.Log("pointMoved");
+            //Debug.Log("pointMoved");
             origin.position = newTarget.position;
         }
 

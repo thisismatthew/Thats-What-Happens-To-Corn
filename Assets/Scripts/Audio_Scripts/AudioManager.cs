@@ -21,18 +21,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        FindObjectOfType<AudioManager>().Play("OpeningSting");
-    }
-
-    private void Update()
-    {
-
-
-
-    }
-
     // Update is called once per frame
     public void Play(string name)
     {

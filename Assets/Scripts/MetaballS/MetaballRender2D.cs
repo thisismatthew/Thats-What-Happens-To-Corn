@@ -21,6 +21,7 @@ public class MetaballRender2D : ScriptableRendererFeature
         public Color outlineColor = Color.black;
     }
 
+    [SerializeField]
     public MetaballRender2DSettings settings = new MetaballRender2DSettings();
 
     class MetaballRender2DPass : ScriptableRenderPass

@@ -15,9 +15,9 @@ MonoBehaviour:
   m_Active: 1
   settings:
     renderPassEvent: 600
-    outlineSize: 0.118
-    innerColor: {r: 0.6398579, g: 0.85882354, b: 0.4078431, a: 0.08627451}
-    outlineColor: {r: 0.61453414, g: 0.7830189, b: 0.2474635, a: 0.31764707}
+    outlineSize: 0.114
+    innerColor: {r: 0.7877358, g: 1, b: 0.9893868, a: 1}
+    outlineColor: {r: 0.6745283, g: 1, b: 1, a: 1}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
