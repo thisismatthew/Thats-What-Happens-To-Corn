@@ -40,6 +40,7 @@ public class CornController : MonoBehaviour
     public bool Debugging = true;
 
 
+
     private void Start()
     {
         foreach (GameObject g in KernelLoader)
@@ -89,9 +90,14 @@ public class CornController : MonoBehaviour
         //if all the corn bits are gone in this scene call the next one!
         //might need a special case for the final one. 
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         if(CornKernels.Count == 0)
         {
-            
+            FindObjectOfType<AudioManager>().Play("Yay");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }

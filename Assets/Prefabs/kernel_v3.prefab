@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3043759228037794826}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4839421076165587648}
   - component: {fileID: 2236354682697876667}
   - component: {fileID: 4252477543196858174}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1773999098998104161}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5931049742047285561}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 6813498377874482557}
   - component: {fileID: 1942153628606558754}
   - component: {fileID: 3120859503939638812}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LeftLowerLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 7380164919605846317}
   - component: {fileID: 7380164919605846319}
   - component: {fileID: 7380164919605846318}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Corn_with_legs_rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 8642236236016079511}
   - component: {fileID: 3624057847470507332}
   - component: {fileID: 8118922912985043398}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LeftUpperLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4427714145874234145}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 8888387983260286020}
   - component: {fileID: 3823464890772787217}
   - component: {fileID: 2421389045821670441}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RightUpperLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9024181086020913598}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,7 +707,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494631378683060}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LeftLegAnimation_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,7 +738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6009494631533842045}
   - component: {fileID: 6009494631533842042}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RightLegSolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494631659572714}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RightUpdatedAnimationTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6009494631881317902}
   - component: {fileID: 6009494631881317903}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LeftLegSolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -897,7 +897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494632238793460}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Effector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,7 +927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494632274402567}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RightLegAnimation_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494632841602841}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: kernel_v3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -990,7 +990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494632962421802}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Effector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494633077054552}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RightLegSolver_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494633152098274}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LeftUpdatedAnimationTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009494633257425099}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LeftLegSolver_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1112,7 +1112,7 @@ GameObject:
   - component: {fileID: 2456791576608703328}
   - component: {fileID: 2856810876435670778}
   - component: {fileID: 1503006394888314913}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RightLowerLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 889289609215740440}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

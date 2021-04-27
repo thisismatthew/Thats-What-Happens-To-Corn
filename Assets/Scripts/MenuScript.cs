@@ -18,6 +18,7 @@ public class MenuScript : MonoBehaviour
 
     public void ShowMenu()
     {
+        FindObjectOfType<AudioManager>().StopAll();
         SceneManager.LoadScene("StartMenu");
     }
 
